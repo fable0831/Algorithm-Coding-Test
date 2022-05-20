@@ -7,8 +7,13 @@
         <script>
             function solution(arr){
                 let answer=[];
-                let sum=0, min=1000;
- 
+                let sum =0;
+                for(i=0; i<7; i++){
+                    if(arr[i] % 2 !== 0) sum +=arr[i]; 
+                    min= Math.min(...arr);
+                };
+                answer[0] = sum;
+                answer[1] = min;
                 return answer;
             }
             

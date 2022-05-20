@@ -7,13 +7,17 @@
         <script>
             function solution(day, arr){
                 let answer=0;
-                
-                
+                let sum =[];
+                for(i=0; i<7; i++){
+                    if (day == (arr[i]%10)) sum.push(i);
+                };
+                console.log(sum);
+                answer = sum.length;
                 return answer;
             }
             
-            arr=[25, 23, 11, 47, 53, 17, 33];
-            console.log(solution(3, arr));
+            arr=[12, 20, 54, 30, 87, 91, 30];
+            console.log(solution(0, arr));
         </script>
     </body>
 </html>
