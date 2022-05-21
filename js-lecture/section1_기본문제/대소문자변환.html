@@ -1,17 +1,22 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>출력결과</title>
-    </head>
-    <body>
-        <script>
-            function solution(s){  
-                let answer="";
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "";
+        for (let x of s) {
+          if (x === x.toUpperCase()) x.toLowerCase();
+          else x = x.toUpperCase();
+          console.log(x);
+          answer = s;
+        }
+        return answer;
+      }
 
-                return answer;
-            }
-
-            console.log(solution("StuDY"));
-        </script>
-    </body>
+      console.log(solution("StuDY"));
+    </script>
+  </body>
 </html>
